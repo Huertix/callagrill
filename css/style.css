@@ -47,8 +47,14 @@ nav li		{	display: inline;
 				border-left: 2px}	
 				
 nav a:active		{	  
-    border-bottom:3px;  
-    color:navy;  }		
+    					border-bottom:3px;  
+    					color:navy;  }
+
+input 		{	width: 400px;
+				float: left;
+				padding-right: 100px;
+
+				}    							
 					
 				
 			
@@ -135,4 +141,7 @@ footer img	{
 				
 footer a 		{	text-decoration: none;
 				color: #555753;	
+
+				{	text-align: center;
+					box-shadow: 10px 10px 5px #888888}				
 				

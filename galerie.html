@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Call a Grill</title>
+<link href="css/style.css" rel="stylesheet" type="text/css"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		var dir = "images/galerie/";
+		var fileextension = ".jpg";
+		$.ajax({
+		    //This will retrieve the contents of the folder if the folder is configured as 'browsable'
+		    url: dir,
+		    success: function (data) {
+		        //Lsit all png file names in the page
+		        $(data).find("a:contains(" + fileextension + ")").each(function () {
+		            var filename = this.href.replace(window.location.host, "").replace("http:///", "");
+		            $("#galerie").append($("<img src=" + dir + filename + "></img>"));
+		        });
+		    }
+		});
+
+	</script>
+</head>
+<body>
+	<div id="galerie"></div>
+</body>
+</html>

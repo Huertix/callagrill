@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>Call a Grill</title>
 
-<link href="css/style.css" rel="stylesheet" type="text/css"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css">
 
 <link rel='stylesheet' 
 				type='text/css' 
