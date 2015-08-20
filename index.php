@@ -65,10 +65,7 @@
 		$('b').find('a').click(function(e){
 		     e.preventDefault();
 		     $('article').load($(this).attr('href'));
-		  });
-			
-		footerAdjust();
-		      
+		  });	      
 	});
 	
 	
@@ -78,6 +75,7 @@
 	$(window).resize(function(){
 		waitForFinalEvent(function(){
 			footerAdjust();
+			console.log("resize");
 		});
 		
 	});
@@ -113,6 +111,10 @@
 			<img alt="follow me on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook40x40.png" width="auto" height="auto" border=0></a>
 		</footer>
 	</div>
+
+	<script type="text/javascript">
+		footerAdjust();
+	</script>
 
 	
 </body>
