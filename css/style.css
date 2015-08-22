@@ -5,7 +5,7 @@ body		{
 				background-color:rgba(0, 0, 0, 0.8); 
 				margin: 5px auto;
 				background: url(../images/body-bg.jpg);
-				min-width: 300px;
+				min-width: 490px;
 				}
 				
 #main-wrapper {
@@ -41,20 +41,21 @@ nav ul		{	height: auto;
 				padding: 8px 0px;
 				margin: 0px;}
 
-nav li		{	display: inline;
+nav li		{	display: inline-block;
 				letter-spacing:1px;
-				padding: 20px;
-				border-left: 2px}	
+				padding:20px;
+				border-left: 2px;}	
 				
-nav a:active		{	  
-    					border-bottom:3px;  
-    					color:navy;  }
+nav a.active	{	background-color: rgba(128, 128, 128, 0.8);
+					color:#F90;
+					border-radius: 8px;
+    			}
 
-input 		{	width: 400px;
-				float: left;
-				padding-right: 100px;
+input, textarea 	{	width: 70%;
+						float: none;
+					}  
 
-				}    							
+				  							
 					
 				
 			
@@ -64,7 +65,8 @@ nav a 		{	text-decoration: none;
 				padding: 8px 8px 8px 8px;}
 
 nav a:hover	{	color:#F90;
-				border-bottom: 2px navy;}	
+				background-color: rgba(128, 128, 128, 0.8);
+				border-radius: 8px;}	
 												     			
        			
 article		{					
@@ -119,9 +121,8 @@ footer		{
 				position: absolute;
 				background: rgba(255, 255, 255, 0.6);
 				width: 100%; 
-				height: 40px;
-				bottom: 0;
-				
+				height: 50px;
+				bottom: 0;				
 				border-radius: 8px;
 				}
 				
@@ -140,8 +141,4 @@ footer img	{
 				}		
 				
 footer a 		{	text-decoration: none;
-				color: #555753;	
-
-				{	text-align: center;
-					box-shadow: 10px 10px 5px #888888}				
-				
+				color: #555753;	}			

@@ -5,6 +5,7 @@
 <title>Call a Grill</title>
 
 <link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel=”shortcut icon” type=”image/x-icon” href=”favicon.ico”>
 
 <link rel='stylesheet' 
 				type='text/css' 
@@ -49,7 +50,22 @@
 		    timers[uniqueId] = setTimeout(callback, ms);
 		  };
 		})();
+
+
 	
+	function cliked(){
+		console.log("link clicked");
+		
+		var li = '';
+
+		$('nav').find('a').click(function(e){
+		    e.preventDefault();
+		    $("a").each(function() {
+		    	$(this).removeClass("active");
+   			});
+		    $(this).addClass("active");
+		});
+	}
 
 
 	$(document).ready(function(){
@@ -60,12 +76,14 @@
 		$('nav').find('a').click(function(e){
 		     e.preventDefault();
 		     $('article').load($(this).attr('href'));
-		  });
+		});
 			
-		$('b').find('a').click(function(e){
+		$('.impressum').find('a').click(function(e){
 		     e.preventDefault();
 		     $('article').load($(this).attr('href'));
-		  });	      
+		});	
+
+
 	});
 	
 	
@@ -92,24 +110,30 @@
 		<header><img src="images/../images/header.jpg" width="auto" height="auto"></header>
 		<nav>
 			<ul>
-				<li><a href="home.html">Home</a></li>
-				<li><a href="service.html">Service</a></li>
-				<li><a href="kalt.html">Kalt</a></li>
-				<li><a href="galerie.html">Galerie</a></li>
-				<li><a href="aktuell.html">Aktuell</a></li>
-				<li><a href="referenzen.html">Referenzen</a></li>
-				<li><a href="kontakt.html">Kontakt</a></li>
+				<li><a href="home.html" onclick='cliked()' class="active">Home</a></li>
+				<li><a href="service.html" onclick='cliked()'>Service</a></li>
+				<li><a href="kalt.html" onclick='cliked()'>Kalt</a></li>
+				<li><a href="galerie.html" onclick='cliked()'>Galerie</a></li>
+				<li><a href="aktuell.html" onclick='cliked()'>Aktuell</a></li>
+				<li><a href="referenzen.html" onclick='cliked()'>Referenzen</a></li>
+				<li><a href="kontakt.html" onclick='cliked()'>Kontakt</a></li>
 			</ul>
 		</nav>
 		
 		<article>	
+
+
 		</article>
-		
+
 		<footer>
-			<span>Call a Grill.de @ 2015 - <b><a href="impressum.html">Impressum</a></b> - Aktuelle Infos in </span>
+			<span class="impressum"><a href="impressum.html">Impressum</a></span> | Besuchen Sie uns auch auf  
 			<a target="_blank" href="https://www.facebook.com/pages/Call-A-Grill-Asado-Argentino-M%C3%BCnchen/104575736254548">
 			<img alt="follow me on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook40x40.png" width="auto" height="auto" border=0></a>
+			<span style="float: auto; padding-left: 10%;" > 089 - 589 77 919  |  0178-14 29 659  | <a href="mailto:info@olivos-sl.de" target="_top">info@olivos-sl.de</a></span>
+			<span style="float: right; padding-right: 1%;"> © 2015 call-a-grill by Huertix</span>
 		</footer>
+		
+		
 	</div>
 
 	<script type="text/javascript">
