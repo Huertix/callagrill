@@ -5,104 +5,8 @@
 	<title>Call a Grill</title>
 
 	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="scripts/bxslider/jquery.bxslider.css" rel="stylesheet" type="text/css">
 	<link rel=”shortcut icon” type=”image/x-icon” href=”images/favicon.ico”>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script>
-		
-		var h = 0;
-		var w = 0;
-		
-		var footerAdjust = function(){
-		      var win = $(this); //this = window
-		      if (win.height() >= 820) { /* ... */ }
-		      if (win.width() >= 1280) { /* ... */ }
-		      
-		      h = $('body').height();
-		      w = $('body').width();
-		      
-				console.log("h: %d, w: %d",h,w);
-				//alert("resize");
-				
-				$('footer').css('top',h+685);
-
-				if(w<=1285 && w>=810){
-					$('footer').css('height','80px');
-					console.log('1 '+w);
-				}else if(w<810){
-					$('footer').css('height','120px');
-					console.log('2 '+w);
-				}else{
-					$('footer').css('height','40px');
-					console.log('3 '+w);
-				}
-				
-		}
-		
-		var waitForFinalEvent = (function () {
-			  var timers = {};
-			  return function (callback, ms, uniqueId) {
-			    if (!uniqueId) {
-			      uniqueId = "Don't call this twice without a uniqueId";
-			    }
-			    if (timers[uniqueId]) {
-			      clearTimeout (timers[uniqueId]);
-			    }
-			    timers[uniqueId] = setTimeout(callback, ms);
-			  };
-			})();
-
-
-		
-		function cliked(){	
-
-			$("a").each(function() {
-			    	$(this).removeClass("active");
-			});
-			
-
-			$('nav').find('a').click(function(e){
-			    e.preventDefault();
-			    
-	   			
-			    $(this).addClass("active");
-			});
-		}
-
-
-		$(document).ready(function(){
-			$('article').load('home.html', function(data){
-				$(this).html(data);
-			}); 
-			
-			$('nav').find('a').click(function(e){
-			     e.preventDefault();
-			     $('article').load($(this).attr('href'));
-			});
-				
-			$('.impressum').find('a').click(function(e){
-			     e.preventDefault();
-			     $('article').load($(this).attr('href'));
-			});	
-
-
-		});
-		
-		
-		
-		$(window).resize(function(){
-			waitForFinalEvent(function(){
-				footerAdjust();
-				console.log("resize");
-			});
-			
-		});
-		
-
-	     footerAdjust();
-
-		
-		</script>
 
 </head>
 <body>
@@ -136,10 +40,8 @@
 		
 	</div>
 
-	<script type="text/javascript">
-		footerAdjust();
-	</script>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript"src="scripts/index.js"></script>
 	
 </body>
 </html>

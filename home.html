@@ -1,12 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Call a Grill</title>
-
-	<link href="css/style.css" rel="stylesheet" type="text/css">
-
-</head>
 <body>
 	<h1>Herzlich Willkommen !</h1>
 		<section>
@@ -35,6 +28,28 @@
 					<br/>
 					Fragen Sie uns, wir finden das passende für Sie. 
 		</section>
-		<aside><img src="images/img_home.jpg"></aside>	
+		<aside>
+			<ul class="slider">
+				<li><img src="images/img_home.jpg"></li>
+				<li><img src="images/img_kalte.jpg"></li>
+				<li><img src="images/img_grill.jpg"></li>
+				<li><img src="images/contact.jpg"></li>
+				<li><img src="images/img_kalte.jpg"></li>
+			</ul>
+		</aside>	
+
+
+	<script type="text/javascript" src="scripts/bxslider/jquery.bxslider.js"></script>
+	<script type="text/javascript">
+			$('.slider').bxSlider({
+					auto: true,
+  					autoControls: false,
+  					slideWidth: 450,
+  					adaptiveHeight: true,
+
+
+			});
+	</script>
+
 </body>
 </html>
