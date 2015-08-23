@@ -24,7 +24,7 @@
 				console.log("h: %d, w: %d",h,w);
 				//alert("resize");
 				
-				$('footer').css('top',h+2);
+				$('footer').css('top',h+685);
 
 				if(w<=1285 && w>=810){
 					$('footer').css('height','80px');
