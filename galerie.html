@@ -5,25 +5,34 @@
 <meta charset="UTF-8">
 <title>Call a Grill</title>
 <link href="css/style.css" rel="stylesheet" type="text/css"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script>
-		var dir = "images/galerie/";
-		var fileextension = ".jpg";
-		$.ajax({
-		    //This will retrieve the contents of the folder if the folder is configured as 'browsable'
-		    url: dir,
-		    success: function (data) {
-		        //Lsit all png file names in the page
-		        $(data).find("a:contains(" + fileextension + ")").each(function () {
-		            var filename = this.href.replace(window.location.host, "").replace("http:///", "");
-		            $("#galerie").append($("<img src=" + dir + filename + "></img>"));
-		        });
-		    }
-		});
-
-	</script>
 </head>
 <body>
-	<div id="galerie"></div>
+	<div id="content">
+		<iframe src="http://embedsocial.com/facebook_album/album_photos/1067355423309903">
+		</iframe>
+		<iframe src="http://embedsocial.com/facebook_album/album_photos/1042427555802690">
+		</iframe>
+		<iframe src="http://embedsocial.com/facebook_album/album_photos/1020657381313041">
+		</iframe>
+		<iframe src="http://embedsocial.com/facebook_album/album_photos/1035107453201367">
+		</iframe>
+		<iframe src="http://embedsocial.com/facebook_album/album_photos/782086178503497">
+		</iframe>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		var x = $('#content').height();
+		console.log('x: '+x);
+		$('article').css('height',x);
+		x += $('header').height();
+		x += $('nav').height();
+		x += $('footer').height();
+		$('footer').css('top',x);
+	});
+	</script>
+
+
 </body>
 </html>

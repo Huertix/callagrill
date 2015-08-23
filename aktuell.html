@@ -2,21 +2,49 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script>
-		$(document).ready(function(){
-				$('#news').load('https://www.facebook.com/pages/Call-A-Grill-Asado-Argentino-M%C3%BCnchen/104575736254548', function(data){
-					$(this).html(data);
-				}); 
-				
-	</script>
+
 
 </head>
 <body>
-<div id="news"></div>
+
+		<div id="news1" style="background: rgba(255, 255, 255, 0.4);margin: 2%; padding: 1%;box-shadow: 10px 10px 5px #888888;border-radius: 8px;">
+			<h1>Charity Award „Herz aus Gold“ von der  Eltern Initiative Krebskranke Kinder e.V.</h1>
+			<img src="images/aktuell.jpg" style="width: 60%; height:auto; margin: 1% 1% 6% 20%;">
+		</div>
+		<div id="news2" style="background: rgba(255, 255, 255, 0.4);margin: 2%; padding: 1%;box-shadow: 10px 10px 5px #888888;border-radius: 8px;">
+			<h1>Sendung: Welt der Wunder (Eine Produktion von RTL2)</h1>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+			<script src="http://api.medianac.com/p/105/sp/10500/embedIframeJs/uiconf_id/11601355/partner_id/105"></script>
+					<div id="kaltura_player_1421836828" style="width: 85%; height: 660px; margin: 4% 1% 1% 8%" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+
+						<span itemprop="name" content="<strong>Grillen weltweit</strong>"></span>
+						<span itemprop="description" content="Traditionelle Grillgerichte wie Asado, Jerk und Schaschlik lassen das Wasser im Mund zusammenlaufen. Doch was ist das Geheimnis ihrer Zubereitungsart? Welt der Wunder begibt sich auf eine kulinarische Reise."></span>
+						<span itemprop="duration" content="107"></span>
+						<span itemprop="thumbnail" content="http://api.medianac.com/p/105/sp/10500/thumbnail/entry_id/0_hwfc1rlv/version/100000/acv/142"></span>
+						<span itemprop="width" content="642"></span>
+						<span itemprop="height" content="391"></span>
+					</div>
+			<script src="http://api.medianac.com/p/105/sp/10500/embedIframeJs/uiconf_id/11601355/partner_id/105?autoembed=true&entry_id=0_hwfc1rlv&playerId=kaltura_player_1421836828&cache_st=1421836828&width=642&height=391&flashvars[streamerType]=rtmp&flashvars[mediaProtocol]=rtmp"></script>
+
+		</div>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var x = $('#kaltura_player_1421836828').height();
+				console.log('x aktuell: '+x);
+				x += 600;
+				$('article').css('height',x);
+				x += $('header').height();
+				x += $('nav').height();
+				x += $('footer').height();
+				$('footer').css('top',x);
+			});
+		</script>
 
 
-	
+
+
+
 
 </body>
 </html>

@@ -1,32 +1,18 @@
 <!DOCTYPE html>
 <html>
 <body>
-	<h1>Herzlich Willkommen !</h1>
+	<h1>“Call-a-Grill“</h1>
+	<h1>Argentinische Spezialitäten</h1>
 		<section>
-			<p>Sie haben einen Grund zu feiern? Sie wohnen in München oder Umland?
-				Wie schön! Überraschen Sie Ihre Gäste mit einer argentinischen Grillparty.
-				Ein angenehmer Anlass kann auch schnell einmal zum Stress werden.
-				Amüsieren Sie sich doch lieber mit Ihren Gästen.
-				Wir übernehmen Vorbereitung und Ausrichtung, um Ihnen eine Feier ganz nach Ihren Vorstellungen zu kreieren.
-				Wir möchten Ihrem Fest den angemessenen Rahmen geben, so dass Sie sich ganz Ihren Gäste widmen können.
-				Schon über 1000 Gäste haben unsere argentinschen Grillfeste genossen.<p>
-	
-					<span>* Argentinisches Fleisch (Roastbeef-Entrecote)</span><br/>
-					<span>* Argentinische Grillwurst</span><br/>
-					<span>* Blutwurst</span><br/>
-					<span>* Folienkartoffel</span><br/>
-					<span>* Maiskolben</span><br/>
-					<span>* Gemüsespieße</span><br/>
-					<span>* Empanadas (Mit Fleisch gefüllte Teigtaschen)</span><br/>
-					<br/>
-					Extras:<br/>					
-					<span>* Biergartentische und Bänke</span><br/>
-					<span>* Pavillons, Zelte , Festzelte</span><br/>
-					<span>* Live-Musik</span><br/>
-					<span>* Cocktail Bar</span><br/>
-					<span>* Brasilianische Party" (Auf Anfrage)</span><br/>
-					<br/>
-					Fragen Sie uns, wir finden das passende für Sie. 
+			<h3 style="text-shadow: 5px 5px 2px #888888; background: rgba(255, 255, 255, 0.4);margin: 2%; padding: 1%; box-shadow: 10px 10px 5px #888888;border-radius: 8px;">Sie möchten ein Grillfest veranstalten
+				und trotzdem Zeit für Ihre Gäste haben?</h3>
+
+			<h3 style="background: rgba(255, 255, 255, 0.4);margin: 2%; padding: 1%;box-shadow: 10px 10px 5px #888888;border-radius: 8px;">Ob private Veranstaltungen oder Firmen-Events,
+				wir kümmern uns um Ihre Verpflegung und Unterhaltung!</h3>
+
+			<h3 style="background: rgba(255, 255, 255, 0.4);margin: 2%; padding: 1%;box-shadow: 10px 10px 5px #888888;border-radius: 8px;">Kontaktieren Sie uns.
+				Wir werden Sie umgehend zurückrufen um einen 
+				persönlichen Termin vor Ort zu vereinbaren. </h3>
 		</section>
 		<aside>
 			<ul class="slider">
@@ -38,7 +24,7 @@
 			</ul>
 		</aside>	
 
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script type="text/javascript" src="scripts/bxslider/jquery.bxslider.js"></script>
 	<script type="text/javascript">
 			$('.slider').bxSlider({
@@ -49,6 +35,21 @@
 
 
 			});
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var x = $('h1').height();
+			console.log('x: '+x);
+			x += $('aside').height();
+			x += 150;
+			$('article').css('height',x);
+			x += $('header').height();
+			x += $('nav').height();			
+			x += $('footer').height();
+			$('footer').css('top',x);
+
+		});
 	</script>
 
 </body>

@@ -11,20 +11,15 @@ var footerAdjust = function(){
       
 		console.log(" body h: %d, w: %d",h,w);
 		//alert("resize");
-
-		console.log(" body h: %d, w: %d",h,w);
 		
-		$('footer').css('top',h+800);
+		
 
-		if(w<=1285 && w>=810){
+		if(w<=1190){
 			$('footer').css('height','80px');
 			console.log('1 '+w);
-		}else if(w<810){
-			$('footer').css('height','120px');
-			console.log('2 '+w);
 		}else{
 			$('footer').css('height','40px');
-			console.log('3 '+w);
+			console.log('2 '+w);
 		}
 		
 }
@@ -60,6 +55,7 @@ function cliked(){
 }
 
 
+
 $(document).ready(function(){
 	$('article').load('home.html', function(data){
 		$(this).html(data);
@@ -68,12 +64,19 @@ $(document).ready(function(){
 	$('nav').find('a').click(function(e){
 	     e.preventDefault();
 	     $('article').load($(this).attr('href'));
+	     
 	});
 		
 	$('.impressum').find('a').click(function(e){
 	     e.preventDefault();
 	     $('article').load($(this).attr('href'));
 	});	
+
+	waitForFinalEvent(function(){
+			footerAdjust();
+	});
+
+
 
 
 });
@@ -83,10 +86,10 @@ $(document).ready(function(){
 $(window).resize(function(){
 	waitForFinalEvent(function(){
 		footerAdjust();
-		console.log("resize");
+		console.log("resize");	
 	});
 	
 });
 
 
- footerAdjust();
+ 

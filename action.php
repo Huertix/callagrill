@@ -1,6 +1,6 @@
 <?php
 
-	ini_set("SMTP", "smtp.gmail.com);
+	ini_set("SMTP", "smtp.gmail.com");
     ini_set("sendmail_from", "dhuerta23@gmail.com");
 
   	$email_to = "dhuerta23@gmail.com";

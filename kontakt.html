@@ -25,6 +25,20 @@
 			</fieldset>
 
 		</section>
-		<aside><img src="images/contact.jpg" width="auto" height="auto"></aside>	
+		<aside><img src="images/img_kontakt.jpg" width="auto" height="auto"></aside>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		var x = $('section').height();
+		console.log('x: '+x);
+		x += 200;
+		$('article').css('height',x);
+		x += $('header').height();
+		x += $('nav').height();
+		x += $('footer').height();
+		$('footer').css('top',x);
+	});
+	</script>	
 </body>
 </html>
