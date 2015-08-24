@@ -31,9 +31,9 @@
 		<footer>
 			<span class="impressum"><a href="impressum.html" onclick='cliked()'>Impressum</a></span> | Besuchen Sie uns auch auf  
 			<a target="_blank" href="https://www.facebook.com/pages/Call-A-Grill-Asado-Argentino-M%C3%BCnchen/104575736254548">
-			<img></a>
-			<span > Handy: 0178-14 29 659  | <a href="mailto:info@olivos-sl.de" target="_top">info@olivos-sl.de</a></span>
-			<span style="float: right; margin-right: 1%;"> © 2015 call-a-grill by Huertix</span>
+			<img alt="follow me on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook40x40.png" width="auto" height="auto" border=0></a>
+			<span style="float: auto; padding-left: 10%;" > Handy: 0178-14 29 659  | <a href="mailto:info@olivos-sl.de" target="_top">info@olivos-sl.de</a></span>
+			<span style="float: right; padding-right: 1%;"> © 2015 call-a-grill by Huertix</span>
 		</footer>
 		
 		
