@@ -51,7 +51,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<div id="cont">
+	<div id="content">
 		<div id="leftbox">
 			<h4 style="color: red; text-shadow: 2px 1px 2px #333333;">Impressum:<h4>
 				<span>Olivos Munich S.L.</span><br>
@@ -78,11 +78,11 @@
 		</div>
 	</div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script type="text/javascript">
 			$(document).ready(function(){
-				var x = $('#cont').height();
-				console.log('x aktuell: '+x);
+				var x = $('#content').height();
+				console.log('x impressum: '+x);
 				x += 160;
 				$('article').css('height',x);
 				x += $('header').height();
@@ -90,7 +90,7 @@
 				x += $('footer').height();
 				$('footer').css('top',x);
 			});
-		</script>
+	</script>
 
 </body>
 </html>

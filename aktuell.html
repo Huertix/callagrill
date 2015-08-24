@@ -6,7 +6,7 @@
 
 </head>
 <body>
-
+	<div id="content">
 		<div id="news1" style="background: rgba(255, 255, 255, 0.4);margin: 2%; padding: 1%;box-shadow: 10px 10px 5px #888888;border-radius: 8px;">
 			<h1>Charity Award „Herz aus Gold“ von der  Eltern Initiative Krebskranke Kinder e.V.</h1>
 			<img src="images/aktuell.jpg" style="width: 60%; height:auto; margin: 1% 1% 6% 20%;">
@@ -27,12 +27,13 @@
 			<script src="http://api.medianac.com/p/105/sp/10500/embedIframeJs/uiconf_id/11601355/partner_id/105?autoembed=true&entry_id=0_hwfc1rlv&playerId=kaltura_player_1421836828&cache_st=1421836828&width=642&height=391&flashvars[streamerType]=rtmp&flashvars[mediaProtocol]=rtmp"></script>
 
 		</div>
+	</div>
 
 		<script type="text/javascript">
 			$(document).ready(function(){
-				var x = $('#kaltura_player_1421836828').height();
+				var x = $('#content').height();
 				console.log('x aktuell: '+x);
-				x += 600;
+				x += 20;
 				$('article').css('height',x);
 				x += $('header').height();
 				x += $('nav').height();

@@ -6,7 +6,7 @@ body		{
 				background-color:rgba(0, 0, 0, 0.8); 
 				margin: 5px auto;
 				background: url(../images/body-bg.jpg);
-				min-width: 807px;
+				min-width: 957px;
 				max-width: 1240px;
 				}
 				
@@ -166,7 +166,23 @@ footer img	{
 			}		
 				
 footer a 	{	text-decoration: none;
-				color: #555753;	}	
+				color: #555753;	}
+
+.box 		{	background: rgba(255, 255, 255, 0.4);
+				margin: 4%; 
+				padding: 3%; 
+				box-shadow: 10px 10px 5px #888888;
+				border-radius: 8px; }	
+
+.sli		{	width: 38%; 
+				display: inline-block;
+				box-shadow: 10px 10px 5px #888888; }	
+
+.txt		{	width: 59%; 
+				display: inline-block;
+				vertical-align:top;
+				text-align: center; }	
+			
 
 
 

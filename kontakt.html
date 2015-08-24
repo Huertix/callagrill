@@ -7,6 +7,7 @@
 
 </head>
 <body>
+	<div id="content">
 		<h1> Kontakt</h1>
 		<section>
 				<p>Nehmen Sie mit uns über das Formular Kontakt auf.
@@ -26,12 +27,12 @@
 
 		</section>
 		<aside><img src="images/img_kontakt.jpg" width="auto" height="auto"></aside>
-
+	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function(){
 		var x = $('section').height();
-		console.log('x: '+x);
+		console.log('x kontakt: '+x);
 		x += 200;
 		$('article').css('height',x);
 		x += $('header').height();

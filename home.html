@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <body>
-	<h1>“Call-a-Grill“</h1>
-	<h1>Argentinische Spezialitäten</h1>
+	<div id="content">
+		<h1>“Call-a-Grill“</h1>
+		<h1>Argentinische Spezialitäten</h1>
 		<section>
 			<h3>Sie möchten ein Grillfest veranstalten
 				und trotzdem Zeit für Ihre Gäste haben?</h3>
@@ -23,7 +24,8 @@
 				<li><img src="images/carousel/4.jpg"></li>
 				<li><img src="images/carousel/5.jpg"></li>
 			</ul>
-		</aside>	
+		</aside>
+	</div>	
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script type="text/javascript" src="scripts/bxslider/jquery.bxslider.js"></script>
@@ -40,10 +42,9 @@
 
 	<script type="text/javascript">
 		$(document).ready(function(){
-			var x = $('h1').height();
-			console.log('x: '+x);
-			x += $('aside').height();
-			x += 150;
+			var x = $('#content').height();
+			console.log('x home: '+x);
+			x += 780;
 			$('article').css('height',x);
 			x += $('header').height();
 			x += $('nav').height();			
