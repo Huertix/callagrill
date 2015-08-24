@@ -12,7 +12,7 @@ var footerAdjust = function(){
 		console.log(" body h: %d, w: %d",h,w);
 		//alert("resize");
 		
-		if(w<=1190){
+		if(w<1061){
 			$('footer').css('height','80px');
 			console.log('1 '+w);
 		}else{

@@ -1,9 +1,6 @@
 <?php
 
-	ini_set("SMTP", "smtp.gmail.com");
-    ini_set("sendmail_from", "dhuerta23@gmail.com");
-
-  	$email_to = "dhuerta23@gmail.com";
+  	$email_to = "info@olivos-sl.de";
  
   	$email_subject = "Call a Grill Web";
 
@@ -124,8 +121,8 @@
 
 
 	  	echo '<script type="text/javascript">';  
-		echo 'alert("Thanks....");'; 
-		echo 'window.history.back();';
+		echo 'alert("Danke.\n\n Wir werden uns so schnell kontaktieren.");'; 
+		echo 'window.location="index.php";';
 		echo '</script>';	
 		
 
