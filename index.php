@@ -6,7 +6,7 @@
 
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<link href="scripts/bxslider/jquery.bxslider.css" rel="stylesheet" type="text/css">
-	<link rel=”shortcut icon” type=”image/x-icon” href=”images/favicon.ico”>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
 
 
 </head>
