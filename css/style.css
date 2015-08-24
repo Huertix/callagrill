@@ -15,6 +15,13 @@ body		{
     			position: relative;
 				}
 
+h3 				{	text-shadow: 2px 2px 1px #888888; 
+					background: rgba(255, 255, 255, 0.4);
+					margin: 8%; 
+					padding: 2%; 
+					box-shadow: 10px 10px 5px #888888;
+					border-radius: 8px;	}
+
 header		{ 	
 				width: 100%; 
 				height: auto;
@@ -77,7 +84,7 @@ article		{
 article h1	{	
    				font-family: Tahoma, Geneva, sans-serif;
 				text-align: center; 
-				text-shadow: 3px 2px 3px #333333; 	}				
+				text-shadow: 3px 2px 3px #fff; 	}				
 
 section 	{
 				position: absolute;
@@ -85,7 +92,7 @@ section 	{
 				width: 45%;
 				height: auto;
 				max-height: 80%;
-				background-color:rgba(255, 255, 255, 0.6);
+				background-color:rgba(255, 255, 255, 0.2);
 				border-radius: 8px;
 				text-align: justify;
 				border: 2px solid white;
