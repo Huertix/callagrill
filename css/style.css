@@ -176,7 +176,9 @@ footer a 	{	text-decoration: none;
 
 .sli		{	width: 38%; 
 				display: inline-block;
-				box-shadow: 10px 10px 5px #888888; }	
+				box-shadow: 10px 10px 5px #888888; 
+				background: rgba(255, 255, 255, 0.4);
+				border-radius: 8px;}	
 
 .txt		{	width: 59%; 
 				display: inline-block;
