@@ -41,16 +41,19 @@
 	</script>
 
 	<script type="text/javascript">
+		$(document).ready(function(){			
+					setTimeout(function() { 			
+						var x = $('#content').height();
+						console.log('x service: '+x);
+						x += $('aside').height();
+						x += 160;
+						$('article').css('height',x);
+						x += $('header').height();
+						x += $('nav').height();			
+						x += $('footer').height();
+						$('footer').css('top',x); 
 
-		$(document).ready(function(){
-			var x = $('#content').height();
-			console.log('x home: '+x);
-			x += 780;
-			$('article').css('height',x);
-			x += $('header').height();
-			x += $('nav').height();			
-			x += $('footer').height();
-			$('footer').css('top',x);
+					}, 200); 	
 		});
 	</script>
 

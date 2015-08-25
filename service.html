@@ -12,8 +12,8 @@
 
 	<div class="box">	
 		<div class="txt">
-			<h3>Original ASADO CRIOLLO <p>(Am Spieß)</p></h3>
-			<h3>(Dauert ca. 7 Stunden)</h3>
+			<h3>Original ASADO CRIOLLO (Am Spieß) <br><br>                                                          
+            (Dauert ca. 7 Stunden)</h3>
 		</div>
 
 		<div class="sli">
@@ -32,17 +32,17 @@
 			</ul>
 		</div>
 		<div class="txt" style=" width:59%; display: inline-block; position: relative" >
-			<h3>Ganze Argentinische Roastbeef gegrillt</h3>
-			<h3>(Dauert ca. 3,5 Stunden)</h3>
+			<h3>Ganze Argentinische Roastbeef gegrillt <br><br>
+			(Dauert ca. 3,5 Stunden)</h3>
 		</div>
 	</div>
 	<div class="box">	
 		
 		<div class="txt">
-			<h3>Steak-Buffet <p>( All you can eat )</p><p> bestehend aus:</p></h3>
-			<h3>Argentinisches Roastbeef</h3>
-			<h3>Argentinisches Entrecote</h3>
-			<h3>Argentinische Hüfte</h3>
+			<h3>Steak-Buffet <p>( All you can eat )</p><p> bestehend aus: <br><br><br>
+			Argentinisches Roastbeef<br><br>
+			Argentinisches Entrecote<br><br>
+			Argentinische Hüfte</h3>
 		</div>
 
 		<div class="sli">
@@ -61,20 +61,20 @@
 			</ul>
 			</div>
 		<div class="txt">
-			<h3>Chorizos <p>( All you can eat )</p></h3>
-			<h3>Argentinische Würste nach Heimrezept</h3>
+			<h3>Chorizos <p>( All you can eat )<br><br>
+			Argentinische Würste nach Heimrezept</p></h3> <p><p><p>
 			<h3>o.Abb: Argentinische Blutwürste (Morcillas)</h3>
-		</div>
+		</p></p></p></div>
 	</div>
 	<div class="box">	
 		
 		<div class="txt">
 			<h3>EMPANADAS</h3>
-			<h3>Argentinische gefüllte Teigtaschen
-				Frisch<p> und</p> selbsgemachte Teigtaschen.</h3>
-			<h3>Rindfleisch</h3>
-			<h3>Spinat</h3>
-			<h3>Mais</h3>
+			<h3>Argentinische gefüllte Teigtaschen. <br>
+				Frisch und selbsgemacht.</h3>
+			<h3>Rindfleisch<br><br>
+			    Spinat<br><br>
+			    Mais</h3>
 		</div>
 
 		<div class="sli">
@@ -148,7 +148,8 @@
 	<div class="box">	
 		
 		<div class="txt">
-			<h3><p>Fragen Sie uns nach unseren</p><p> Brasil Catering!</p></h3>
+			<h3><p>Fragen Sie uns nach unseren<br><br><br>
+                   Brasil Catering!</p></h3>
 		</div>
 		<div class="sli">
 			<ul class="slider">
@@ -166,9 +167,11 @@
 			</ul>
 			</div>
 		<div class="txt">
-			<h3>Freundliches Personal</h3>
-			<h3>3 bis 4 sprächiges Personal, alle belehrt nach § 43 IfSG.</h3>
-			<h3>Argentinischer Grillmeister mit 40 Jahre Erfahrung und Assistenten</h3>
+			<h3>Freundliches Personal<br><br><br>
+			    3 bis 4 sprächiges Personal,<br>
+                alle belehrt nach § 43 IfSG.</h3>
+			<h3>Tomás Illes<br>
+                Argentinischer Grillmeister mit 40 Jahre Erfahrung und Assistenten</h3>
 		</div>
 	</div>
 
@@ -190,17 +193,19 @@
 	</script>
 
 	<script type="text/javascript">
-		$(document).ready(function(){
-			var x = $('#content').height();
-			console.log('x service: '+x);
-			x += $('aside').height();
-			x += 150;
-			$('article').css('height',x);
-			x += $('header').height();
-			x += $('nav').height();			
-			x += $('footer').height();
-			$('footer').css('top',x);
+		$(document).ready(function(){			
+					setTimeout(function() { 			
+						var x = $('#content').height();
+						console.log('x service: '+x);
+						x += $('aside').height();
+						x += 100;
+						$('article').css('height',x);
+						x += $('header').height();
+						x += $('nav').height();			
+						x += $('footer').height();
+						$('footer').css('top',x); 
 
+					}, 200); 	
 		});
 	</script>
 </body>

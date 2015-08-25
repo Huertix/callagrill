@@ -33,7 +33,7 @@ nav			{
 				margin-top: 1%;
 				width: 100%;
     			height: auto;
-    			font-size: 24px;
+    			font-size: 30px;
    				font-family: Tahoma, Geneva, sans-serif;
     			font-weight: bold;
     			text-align: center;
@@ -51,7 +51,7 @@ nav li		{	display: inline-block;
 				border-left: 2px;}	
 				
 nav a.active	{	background-color: rgba(128, 128, 128, 0.8);
-					color:#F90;
+					color:#FFFFFF;
 					border-radius: 8px;
     			}
 
@@ -65,10 +65,10 @@ input, textarea 	{	width: 70%;
 			
 								
 nav a 		{	text-decoration: none;
-				color: #00F;
+				color: #c60e10;
 				padding: 8px 8px 8px 8px;}
 
-nav a:hover	{	color:#F90;
+nav a:hover	{	color:#FFFFFF;
 				background-color: rgba(128, 128, 128, 0.8);
 				border-radius: 8px;}	
 												     			
